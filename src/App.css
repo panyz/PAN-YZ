@@ -1,23 +1,29 @@
 @import "~antd/dist/antd.css";
 
-.App {
-  text-align: center;
-
-}
-
 #box{
   height: 100%;
 }
 
-#box1 {
+
+#content {
   height: 100%;
-  background-color: #000000;
-  opacity:0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
-#box2 {
-  height: 100%;
+#topNav{
+  position: absolute;
+  z-index: 1;
+}
 
+#text-title{
+  /*align-items: center;*/
+  color: whitesmoke;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 

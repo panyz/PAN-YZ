@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import '../css/NavigationBar.css';
 
-import {Avatar, Menu, Icon,Tooltip } from 'antd';
+import {Avatar, Menu, Icon,Tooltip} from 'antd';
 
-export default class NavigationBar extends Component {
+export default class TopNavBar extends Component {
 
     render() {
         return (
             <div id="container">
-                <Tooltip placement="right" title="PAN-YZ">
+                <Tooltip placement="bottom" title="PAN-YZ">
                 <Avatar
                     style={{margin: 10}}
                     size="large"
@@ -18,8 +18,10 @@ export default class NavigationBar extends Component {
                     <Menu
                         defaultSelectedKeys={['1']}
                         id="nav_menu"
+                        style={{fontSize:13}}
                         theme='dark'
-                        inlineCollapsed={true}
+                        mode="horizontal"
+                        inlineCollapsed={false}
                     >
                         <Menu.Item key="1">
                             <Icon type="rocket"/>
