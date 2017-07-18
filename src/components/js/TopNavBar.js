@@ -21,7 +21,6 @@ export default class TopNavBar extends Component {
                         style={{fontSize:13}}
                         theme='dark'
                         mode="horizontal"
-                        inlineCollapsed={false}
                     >
                         <Menu.Item key="1">
                             <Icon type="rocket"/>

@@ -18,6 +18,7 @@ export default class NavigationBar extends Component {
                     <Menu
                         defaultSelectedKeys={['1']}
                         id="nav_menu"
+                        mode="inline"
                         theme='dark'
                         inlineCollapsed={true}
                     >

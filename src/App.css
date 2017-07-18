@@ -20,11 +20,19 @@
 }
 
 #text-title{
-  /*align-items: center;*/
   color: whitesmoke;
   font-size: x-large;
   font-weight: bold;
+
 }
+
+#text-carousel {
+    color: whitesmoke;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
 
 
 
