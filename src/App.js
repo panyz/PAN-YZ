@@ -3,6 +3,7 @@ import './App.css';
 import {Row, Col, Button, Carousel} from 'antd';
 import NavigationBar from './components/js/NavigationBar';
 import TopNavBar from './components/js/TopNavBar';
+import CarouselText from './components/js/CarouselText';
 
 class App extends Component {
 
@@ -25,23 +26,30 @@ class App extends Component {
                             </span>
                             <hr style={{width: 400, border: '1px solid #108EE9'}}/>
                             {/*<span id="text-title" style={{fontSize: 'xx-large'}}>我是panyz</span>*/}
-                            <Carousel vertical autoplay={true} centerMode={true}>
-                                <div><h3>1</h3></div>
-                                <div><h3>2</h3></div>
-                                <div><h3>3</h3></div>
-                            </Carousel>
-
-                            <span id="text-title" style={{marginTop: 20, fontSize: 'small'}}>Android开发工程师 - 野生程序员</span>
+                            <CarouselText/>
+                            <span id="text-title" style={{marginTop: 20, fontSize: 'small'}}>Android工程师 - 伪前端工程师</span>
 
                             <div style={{marginTop: 100}}>
                                 <Button type="primary"
                                         ghost
-                                        style={{fontSize: 15, color: '#ffffff', borderRadius: 20, margin: 20}}>
+                                        style={{
+                                            fontWeight: 'bold',
+                                            fontSize: 15,
+                                            color: '#ffffff',
+                                            borderRadius: 20,
+                                            margin: 20
+                                        }}>
                                     <a href="https://github.com/panyz/Blogs/issues">我的博客</a>
                                 </Button>
                                 <Button type="primary"
                                         ghost
-                                        style={{fontSize: 15, color: '#ffffff', borderRadius: 20, margin: 20}}>
+                                        style={{
+                                            fontWeight: 'bold',
+                                            fontSize: 15,
+                                            color: '#ffffff',
+                                            borderRadius: 20,
+                                            margin: 20
+                                        }}>
                                     关于我
                                 </Button>
                             </div>
