@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Row, Col, Button, Carousel} from 'antd';
+import {Row, Col, Button} from 'antd';
 import NavigationBar from './components/js/NavigationBar';
 import TopNavBar from './components/js/TopNavBar';
 import CarouselText from './components/js/CarouselText';
@@ -22,12 +22,17 @@ class App extends Component {
                         <div id="content">
 
                             <span id="text-title">
-                                <span role="img">🤙</span>Yo What's up...<span role="img">🤘</span>This is PAN-YZ
+                                <span id="visiable-text" role="img">🤙Yo What's up...</span>
+                                <span role="img">🤘This is PAN-YZ</span>
                             </span>
-                            <hr style={{width: 400, border: '1px solid #108EE9'}}/>
-                            {/*<span id="text-title" style={{fontSize: 'xx-large'}}>我是panyz</span>*/}
+
+                            <hr/>
+
                             <CarouselText/>
-                            <span id="text-title" style={{marginTop: 20, fontSize: 'small'}}>Android工程师 - 伪前端工程师</span>
+
+                            <span id="text-title" style={{marginTop: 20, fontSize: 'small'}}>
+                                <span style={{color: '#108EE9'}}>Android</span>工程师 - <span style={{color: '#108EE9'}}>伪前端</span>工程师
+                            </span>
 
                             <div style={{marginTop: 100}}>
                                 <Button type="primary"

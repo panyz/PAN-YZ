@@ -1,32 +1,34 @@
 import React, {Component} from 'react';
 
-export default class CarouselText extends Component{
+export default class CarouselText extends Component {
     state = {
-        text: ["我是panyz","一位闷骚的程序员","编程,JUST FOR FUN(ง •_•)ง"],
-        index:0
+        text: ["我是panyz", "欢迎大佬莅临指导", "编程,JUST FOR FUN"],
+        index: 0
     };
 
-    componentDidMount(){
+    componentDidMount() {
         let i = 0;
         this.timer = setInterval(() => {
-            if (i>2) {
+            if (i > 2) {
                 i = 0;
             }
             this.setState({
-                index:i
+                index: i
             });
             i++;
-        }, 1500);
+        }, 2000);
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         this.timer && clearInterval(this.timer);
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <span style={{color:'#F5F5F5',fontWeight:'bold', fontSize:'xx-large'}}>{this.state.text[this.state.index]}</span>
+                <span style={{color: '#F5F5F5', fontWeight: 'bold', fontSize: 'xx-large'}}>
+                    {this.state.text[this.state.index]}
+                    </span>
             </div>
         )
     }

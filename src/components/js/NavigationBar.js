@@ -24,11 +24,11 @@ export default class NavigationBar extends Component {
                     >
                         <Menu.Item key="1">
                             <Icon type="rocket"/>
-                            <span>主页</span>
+                            <a href="https://panyz.github.io/" style={{color:'#ffffff'}}>主页</a>
                         </Menu.Item>
                         <Menu.Item key="2">
                             <Icon type="compass"/>
-                            <span>博客</span>
+                            <a href="https://github.com/panyz/Blogs/issues" style={{color:'#ffffff'}}>博客</a>
                         </Menu.Item>
                         <Menu.Item key="3">
                             <Icon type="idcard"/>
